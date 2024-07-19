@@ -2,13 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 
 def main():
-    url = 'ya.ru'
-    #headers = {};
-    reg = requests.get(url)
-    print( reg.content)
+    res = con()
+    print(res)
 
 def con():
-    pass
+    url = 'https://ya.ru/'
+    reg = requests.get(url)
+    return reg.content
 
 if __name__ == "__main__":
     main()
